@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C329E07427B4AE9F005494B3 /* IntroAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329E07327B4AE9F005494B3 /* IntroAnimationViewController.swift */; };
 		C3F2E4E427AC7419006AA3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4E327AC7419006AA3A6 /* AppDelegate.swift */; };
 		C3F2E4E627AC7419006AA3A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4E527AC7419006AA3A6 /* SceneDelegate.swift */; };
 		C3F2E4E827AC7419006AA3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4E727AC7419006AA3A6 /* ViewController.swift */; };
@@ -14,9 +15,11 @@
 		C3F2E4ED27AC7424006AA3A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F2E4EC27AC7424006AA3A6 /* Assets.xcassets */; };
 		C3F2E4F027AC7424006AA3A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F2E4EE27AC7424006AA3A6 /* LaunchScreen.storyboard */; };
 		C3F2E4FC27AC7B39006AA3A6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4FB27AC7B39006AA3A6 /* RoundedButton.swift */; };
+		C3F2E50027AC8720006AA3A6 /* SpecialLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4FF27AC8720006AA3A6 /* SpecialLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C329E07327B4AE9F005494B3 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
 		C3F2E4E027AC7419006AA3A6 /* MichWordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichWordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F2E4E327AC7419006AA3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F2E4E527AC7419006AA3A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		C3F2E4EF27AC7424006AA3A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F2E4F127AC7424006AA3A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3F2E4FB27AC7B39006AA3A6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		C3F2E4FF27AC8720006AA3A6 /* SpecialLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				C3F2E4EC27AC7424006AA3A6 /* Assets.xcassets */,
 				C3F2E4EE27AC7424006AA3A6 /* LaunchScreen.storyboard */,
 				C3F2E4F127AC7424006AA3A6 /* Info.plist */,
+				C329E07327B4AE9F005494B3 /* IntroAnimationViewController.swift */,
 			);
 			path = MichWordle;
 			sourceTree = "<group>";
@@ -74,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F2E4FB27AC7B39006AA3A6 /* RoundedButton.swift */,
+				C3F2E4FF27AC8720006AA3A6 /* SpecialLabel.swift */,
 			);
 			path = Addons;
 			sourceTree = "<group>";
@@ -149,7 +155,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3F2E4E827AC7419006AA3A6 /* ViewController.swift in Sources */,
+				C3F2E50027AC8720006AA3A6 /* SpecialLabel.swift in Sources */,
 				C3F2E4E427AC7419006AA3A6 /* AppDelegate.swift in Sources */,
+				C329E07427B4AE9F005494B3 /* IntroAnimationViewController.swift in Sources */,
 				C3F2E4E627AC7419006AA3A6 /* SceneDelegate.swift in Sources */,
 				C3F2E4FC27AC7B39006AA3A6 /* RoundedButton.swift in Sources */,
 			);
