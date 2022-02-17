@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -367,6 +368,9 @@
                                                 <state key="normal" title="Q">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C34-4q-ZXp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2K-j1-k6A" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="0.0" width="30" height="45"/>
@@ -376,9 +380,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="vne-a9-GAl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="W">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h97-qG-OYa"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3c-Bq-svB" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="64" y="0.0" width="30" height="45"/>
@@ -388,9 +395,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="B9J-j4-3Un"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="E">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PY5-UP-2ZH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YP-vs-BAG" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="96" y="0.0" width="30" height="45"/>
@@ -400,9 +410,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="mDc-wu-9kt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="R">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tb6-Sj-sxf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWu-WW-tZI" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="128" y="0.0" width="30" height="45"/>
@@ -412,9 +425,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="Mb1-Ig-lDX"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="T">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="US7-jR-RrH"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPk-Yq-O8X" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="30" height="45"/>
@@ -424,9 +440,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="VaB-5h-lPl"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="Y">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wfu-O7-fqf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBh-Ze-yUd" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="192" y="0.0" width="30" height="45"/>
@@ -436,9 +455,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="a7L-kW-rVt"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="U">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24C-cp-r7g"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-9E-jGw" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="224" y="0.0" width="30" height="45"/>
@@ -448,9 +470,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="vkN-tq-zOY"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="I">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0nG-vT-npJ"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLz-6U-wGY" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="256" y="0.0" width="30" height="45"/>
@@ -460,9 +485,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="xvZ-nt-3hn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="O">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yhh-PF-hFG"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FlT-IB-7Ch" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="288" y="0.0" width="30" height="45"/>
@@ -472,9 +500,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="Hdq-cH-94r"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="P">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VQ0-jw-hLV"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -489,9 +520,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="eUf-1G-JwK"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="A">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wuk-rh-2qr"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgN-II-IwG" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="32" y="0.0" width="30" height="45"/>
@@ -501,9 +535,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="uF5-mc-U04"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="S">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymU-MM-jLU"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="plh-dk-CfR" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="64" y="0.0" width="30" height="45"/>
@@ -513,9 +550,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="vh4-Ig-U2T"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="D">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivb-hQ-71y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9MF-un-Y6G" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="96" y="0.0" width="30" height="45"/>
@@ -525,9 +565,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="Xkr-Zc-ZOq"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="F">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y5n-am-txj"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQS-WA-srl" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="128" y="0.0" width="30" height="45"/>
@@ -537,9 +580,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="Gvz-D0-AtA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="G">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TFF-db-Tvz"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="liz-Pd-BEx" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="160" y="0.0" width="30" height="45"/>
@@ -549,9 +595,12 @@
                                                     <constraint firstAttribute="height" constant="45" id="qHY-CE-8uT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="H">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QNT-tE-tb9"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJI-ZD-xtH" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="192" y="0.0" width="30" height="45"/>
@@ -561,9 +610,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="sLo-YW-sWO"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="J">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PnH-qg-tAV"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqT-nc-npL" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="224" y="0.0" width="30" height="45"/>
@@ -573,9 +625,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="xkk-CX-fbE"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="K">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkf-XL-Fbs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iga-Il-5Hq" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                 <rect key="frame" x="256" y="0.0" width="30" height="45"/>
@@ -585,9 +640,12 @@
                                                     <constraint firstAttribute="width" constant="30" id="QQA-MA-6bJ"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="L">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdF-yN-A8P"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -601,9 +659,12 @@
                                                     <constraint firstAttribute="width" constant="47" id="zwY-2d-1wr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="Z">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YuM-5B-FM4"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="14k-Oz-BRG" userLabel="ZXC Stack View">
                                                 <rect key="frame" x="49" y="0.0" width="222" height="45"/>
@@ -616,9 +677,12 @@
                                                             <constraint firstAttribute="width" constant="30" id="fKb-3l-yla"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="X">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dBX-I3-PMR"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-ZU-UOf" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                         <rect key="frame" x="32" y="0.0" width="30" height="45"/>
@@ -628,9 +692,12 @@
                                                             <constraint firstAttribute="width" constant="30" id="smC-Me-V09"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="C">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTL-gI-qQH"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zq6-8V-vC1" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                         <rect key="frame" x="64" y="0.0" width="30" height="45"/>
@@ -640,9 +707,12 @@
                                                             <constraint firstAttribute="width" constant="30" id="VxK-Y8-fwD"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="V">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxb-st-PQ4"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVN-dt-L4D" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                         <rect key="frame" x="96" y="0.0" width="30" height="45"/>
@@ -652,9 +722,12 @@
                                                             <constraint firstAttribute="height" constant="45" id="haa-sU-W4d"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="B">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zMh-zf-WNB"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0k0-m6-ebi" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                         <rect key="frame" x="128" y="0.0" width="30" height="45"/>
@@ -664,9 +737,12 @@
                                                             <constraint firstAttribute="width" constant="30" id="FWt-yH-UfH"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="N">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QrS-rb-WSI"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQc-mB-o1s" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                         <rect key="frame" x="160" y="0.0" width="30" height="45"/>
@@ -676,9 +752,12 @@
                                                             <constraint firstAttribute="width" constant="30" id="sdp-bl-kyK"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="M">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wHX-Hc-Znn"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZyM-6E-tw4" customClass="RoundedButton" customModule="MichWordle" customModuleProvider="target">
                                                         <rect key="frame" x="192" y="0.0" width="30" height="45"/>
@@ -688,9 +767,12 @@
                                                             <constraint firstAttribute="height" constant="45" id="d5K-qG-fBX"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                        <state key="normal" title="Q">
+                                                        <state key="normal" title="&lt;">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r5P-1W-PUq"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -701,9 +783,12 @@
                                                     <constraint firstAttribute="width" constant="47" id="3S3-4O-Nel"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                <state key="normal" title="Q">
+                                                <state key="normal" title="&gt;">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="keyboardButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CFu-vR-XE5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -719,6 +804,10 @@
                             <constraint firstItem="pvE-qf-9c7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="141" id="wLn-Ci-hNr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="board" destination="pvE-qf-9c7" id="UD0-Uh-A07"/>
+                        <outlet property="gridLetter" destination="UDN-mO-xXu" id="1CB-hg-R2Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
