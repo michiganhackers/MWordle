@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MichWordle
 //
-//  Created by Drew Scheffer on 2/3/22.
+//  Created by MichHackers IOS TEAM on 2/3/22.
 //
 
 import UIKit
