@@ -54,7 +54,7 @@ class RoundedButton: UIButton {
     func setup() {
         self.layer.borderWidth = 2
         //self.layer.borderColor = nil//borderColor
-        self.layer.cornerRadius = 5 //self.frame.height / 2
-        self.clipsToBounds = true
+        self.layer.cornerRadius = 4 //self.frame.height / 2
+        self.clipsToBounds = false
     }
 }
