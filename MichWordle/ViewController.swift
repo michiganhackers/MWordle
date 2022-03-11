@@ -22,7 +22,13 @@ class ViewController: UIViewController {
         
         boardLabels[2][3].text = "%"
         // Do any additional setup after loading the view.
-        
+        for i in 0..<boardLabels.count {
+            for j in 0..<boardLabels[0].count {
+                boardLabels[i][j].layer.borderWidth = 2
+                boardLabels[i][j].layer.borderColor = cellBoarderColor
+                boardLabels[i][j].text = nil
+            }
+        }
         //TODO: When the view is rendered we dont want every label to just be "A".
 
     }
