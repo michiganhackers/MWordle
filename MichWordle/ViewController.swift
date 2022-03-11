@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         //TODO: This should call some function called "makeMove" or something that changes the appropriate label in boardLabels.
         // Think about what we need here... probably some way to tell what row and col we're on. When should the user be
         // allowed to make a move?
+        print("Hriday Was added!")
     }
     
     //TODO: Make an IBAction that gets called when the "submit button is pressed"
