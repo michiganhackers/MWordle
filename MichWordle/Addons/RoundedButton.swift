@@ -11,44 +11,22 @@ class RoundedButton: UIButton {
     
     var borderColor = UIColor.white.cgColor
     
-    var highlightedColor = UIColor.white {
-        didSet{
-            if (isHighlighted){
-                backgroundColor = highlightedColor
-            }
-        }
-    }
+    var highlightedColor = UIColor.white
     
-    var defaultColor = UIColor.clear {
-        didSet{
-            if (!isHighlighted){
-                backgroundColor = defaultColor
-            }
-        }
-    }
-    
-    override var isHighlighted: Bool {
-        didSet{
-            if (isHighlighted){
-                self.backgroundColor = highlightedColor
-            }else{
-                self.backgroundColor = defaultColor
-            }
-        }
-    }
+    var defaultColor = UIColor.clear
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    required init?(coder: NSCoder) { //LIterally 0 clue what this is
-        super.init(coder: coder)
-    }
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
+    }
+    
+    required init?(coder: NSCoder) { //LIterally 0 clue what this is
+        super.init(coder: coder)
     }
     
     func setup() {

@@ -9,13 +9,20 @@ import UIKit
 
 class StatisticsViewController: UIViewController {
 
+    @IBOutlet weak var popupView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        popupView.layer.cornerRadius = 10
+        popupView.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func dismissButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

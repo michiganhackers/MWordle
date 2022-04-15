@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		C329E07427B4AE9F005494B3 /* IntroAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C329E07327B4AE9F005494B3 /* IntroAnimationViewController.swift */; };
+		C33E3DB32809A40500CF181C /* SubstringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E3DB22809A40500CF181C /* SubstringExt.swift */; };
 		C34DE5E227DAE3EE001D6B76 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DE5E127DAE3EE001D6B76 /* StatisticsViewController.swift */; };
 		C34DE5E527DAE41E001D6B76 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DE5E427DAE41E001D6B76 /* HelpViewController.swift */; };
+		C3B360B52804FB6D009642A8 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B360B42804FB6D009642A8 /* GameManager.swift */; };
+		C3BB86DF2804FD2B006CB10B /* DataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB86DE2804FD2B006CB10B /* DataInterface.swift */; };
 		C3F2E4E427AC7419006AA3A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4E327AC7419006AA3A6 /* AppDelegate.swift */; };
 		C3F2E4E627AC7419006AA3A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4E527AC7419006AA3A6 /* SceneDelegate.swift */; };
 		C3F2E4E827AC7419006AA3A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F2E4E727AC7419006AA3A6 /* ViewController.swift */; };
@@ -22,8 +25,11 @@
 
 /* Begin PBXFileReference section */
 		C329E07327B4AE9F005494B3 /* IntroAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroAnimationViewController.swift; sourceTree = "<group>"; };
+		C33E3DB22809A40500CF181C /* SubstringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstringExt.swift; sourceTree = "<group>"; };
 		C34DE5E127DAE3EE001D6B76 /* StatisticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		C34DE5E427DAE41E001D6B76 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		C3B360B42804FB6D009642A8 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		C3BB86DE2804FD2B006CB10B /* DataInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataInterface.swift; sourceTree = "<group>"; };
 		C3F2E4E027AC7419006AA3A6 /* MichWordle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MichWordle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3F2E4E327AC7419006AA3A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C3F2E4E527AC7419006AA3A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 			children = (
 				C3F2E4FA27AC7B26006AA3A6 /* Addons */,
 				C3F2E4E327AC7419006AA3A6 /* AppDelegate.swift */,
+				C3BB86DE2804FD2B006CB10B /* DataInterface.swift */,
 				C3F2E4E527AC7419006AA3A6 /* SceneDelegate.swift */,
 				C3F2E4E727AC7419006AA3A6 /* ViewController.swift */,
 				C3F2E4E927AC7419006AA3A6 /* Main.storyboard */,
@@ -77,6 +84,7 @@
 				C3F2E4F127AC7424006AA3A6 /* Info.plist */,
 				C329E07327B4AE9F005494B3 /* IntroAnimationViewController.swift */,
 				C34DE5E127DAE3EE001D6B76 /* StatisticsViewController.swift */,
+				C3B360B42804FB6D009642A8 /* GameManager.swift */,
 			);
 			path = MichWordle;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				C3F2E4FB27AC7B39006AA3A6 /* RoundedButton.swift */,
+				C33E3DB22809A40500CF181C /* SubstringExt.swift */,
 				C3F2E4FF27AC8720006AA3A6 /* SpecialLabel.swift */,
 			);
 			path = Addons;
@@ -160,14 +169,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33E3DB32809A40500CF181C /* SubstringExt.swift in Sources */,
 				C3F2E4E827AC7419006AA3A6 /* ViewController.swift in Sources */,
 				C3F2E50027AC8720006AA3A6 /* SpecialLabel.swift in Sources */,
 				C3F2E4E427AC7419006AA3A6 /* AppDelegate.swift in Sources */,
 				C34DE5E527DAE41E001D6B76 /* HelpViewController.swift in Sources */,
+				C3B360B52804FB6D009642A8 /* GameManager.swift in Sources */,
 				C329E07427B4AE9F005494B3 /* IntroAnimationViewController.swift in Sources */,
 				C3F2E4E627AC7419006AA3A6 /* SceneDelegate.swift in Sources */,
 				C3F2E4FC27AC7B39006AA3A6 /* RoundedButton.swift in Sources */,
 				C34DE5E227DAE3EE001D6B76 /* StatisticsViewController.swift in Sources */,
+				C3BB86DF2804FD2B006CB10B /* DataInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

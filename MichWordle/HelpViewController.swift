@@ -9,21 +9,19 @@ import UIKit
 
 class HelpViewController: UIViewController {
 
+    @IBOutlet weak var popupView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        popupView.layer.cornerRadius = 10
+        popupView.layer.masksToBounds = true
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func dismissButtonPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    */
+    
 
 }
