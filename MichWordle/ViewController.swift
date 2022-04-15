@@ -7,6 +7,12 @@
 
 import UIKit
 
+let cellBoarderColorVacant = UIColor.init(red: 0.20, green: 0.20, blue: 0.20, alpha: 1).cgColor
+let cellBoarderColorUsed = UIColor.init(red: 0.40, green: 0.40, blue: 0.40, alpha: 1).cgColor
+
+let blueColor = UIColor.init(red: 111/255.0, green: 178/255.0, blue: 210/255.0, alpha: 1).cgColor
+let yellowColor = UIColor.init(red: 215/255.0, green: 194/255.0, blue: 93/255.0, alpha: 1).cgColor
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var keyboard: UIStackView!
@@ -17,11 +23,7 @@ class ViewController: UIViewController {
     let num_guesses = 6
     var boardLabels : [[UILabel]] = Array(repeating: Array(repeating: UILabel(), count: 5), count: 6)
     
-    let cellBoarderColorVacant = UIColor.init(red: 0.20, green: 0.20, blue: 0.20, alpha: 1).cgColor
-    let cellBoarderColorUsed = UIColor.init(red: 0.40, green: 0.40, blue: 0.40, alpha: 1).cgColor
     
-    let blueColor = UIColor.init(red: 111/255.0, green: 178/255.0, blue: 210/255.0, alpha: 1).cgColor
-    let yellowColor = UIColor.init(red: 215/255.0, green: 194/255.0, blue: 93/255.0, alpha: 1).cgColor
 
     var curr_row = 0
     var curr_col = 0
@@ -58,9 +60,9 @@ class ViewController: UIViewController {
             let curr_row = rows[i]
             let labels = curr_row.subviews.filter({$0 is UILabel})
             for j in 0..<labels.count {
-            let curr_label = labels[j] as! UILabel
-            boardLabels[i][j] = curr_label
-          }
+                let curr_label = labels[j] as! UILabel
+                boardLabels[i][j] = curr_label
+            }
         }
       }
     

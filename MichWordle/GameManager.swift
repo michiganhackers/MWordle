@@ -8,7 +8,7 @@
 import Foundation
 
 class GameManager {
-    let word: String = "umich";
+    let word: String = "union";
     
     //0 is gray, 1 is guessed, 2 is yellow, 3 is blue
     var keyboardVals: [Int] = Array(repeating: 0, count: 26)
