@@ -2,13 +2,13 @@
 //  test.swift
 //  MichWordle
 //
-//  Created by Drew Scheffer on 4/11/22.
+//  Created by Michgan hackers on 4/11/22.
 //
 
 import Foundation
 
 class GameManager {
-    let word: String = "union";
+    let word: String = "beyster";
     
     //0 is gray, 1 is guessed, 2 is yellow, 3 is blue
     var keyboardVals: [Int] = Array(repeating: 0, count: 26)
@@ -50,7 +50,7 @@ class GameManager {
     func getCorrectCode(guess: String) -> String{
         var l_guess = guess.lowercased()
         var curr_word = word
-        var code: String = "GGGGG"
+        var code: String = String(repeating: "G", count: guess.count) // "GGGGGGGG"
         
         //Get all the correct letters first
         for i in 0..<word.count {

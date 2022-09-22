@@ -19,11 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var board: UIStackView!
     @IBOutlet weak var errorBar: UILabel!
     
-    let word_length = 5
+    let word_length = 7
     let num_guesses = 6
-    var boardLabels : [[UILabel]] = Array(repeating: Array(repeating: UILabel(), count: 5), count: 6)
-    
-    
+    var boardLabels : [[UILabel]] = Array()
 
     var curr_row = 0
     var curr_col = 0
@@ -33,10 +31,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillBoardLabels()
-        
-        
-        boardLabels[2][3].text = "%"
+        boardLabels = Array(repeating: Array(repeating: UILabel(), count: word_length), count: num_guesses)
+        createBoard(rows: num_guesses, cols: word_length)
+
         // Do any additional setup after loading the view.
         for i in 0..<boardLabels.count {
             for j in 0..<boardLabels[0].count {
@@ -45,12 +42,33 @@ class ViewController: UIViewController {
                 boardLabels[i][j].text = nil
             }
         }
-        
+
         errorBar.center.y = -100
         errorBar.layer.cornerRadius = 10.0
         errorBar.clipsToBounds = true
         //TODO: When the view is rendered we dont want every label to just be "A".
 
+    }
+    
+    //Fills the board stack_view with labels. Also populated the 2D array
+    func createBoard(rows: Int, cols: Int) -> Void{
+        for row in 0..<rows {t
+            let currentHorizontalStackView = UIStackView()
+            currentHorizontalStackView.axis = .horizontal
+            currentHorizontalStackView.spacing = 3
+            for col in 0..<cols { // First add labels to the horizontal stack view
+                let cell = UILabel()
+                cell.textAlignment = .center
+                cell.textColor = .white
+                cell.text = "B"
+                cell.font = UIFont.boldSystemFont(ofSize: 26.0)
+                cell.widthAnchor.constraint(equalToConstant: 45).isActive = true
+                cell.heightAnchor.constraint(equalToConstant: 45).isActive = true
+                currentHorizontalStackView.addArrangedSubview(cell)
+                boardLabels[row][col] = cell // Makes sure we can access later
+            }
+            board.addArrangedSubview(currentHorizontalStackView)
+        }
     }
     
     //Populates the 2D array, boardLabels, with all the labels
@@ -191,10 +209,10 @@ class ViewController: UIViewController {
         }
         
         //If not a real word
-        if (!word_czar.isRealWord(guess)){
-            displayErrorMessage(withMessage: "That word seems faketown! Try again")
-            return;
-        }
+//        if (!word_czar.isRealWord(guess)){
+//            displayErrorMessage(withMessage: "That word seems faketown! Try again")
+//            return;
+//        }
         
         let code = manager.getCorrectCode(guess: guess)
         let keyboardVals = manager.getKeyboardVals()
