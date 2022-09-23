@@ -8,10 +8,30 @@
 import Foundation
 
 class WordDatabase {
-    let words: [String] = [
-        "first",
-        "second",
-        "third"
+    private let defaults = UserDefaults.standard
+    private let words: [String] = [
+        "beyster",
+        "union",
+        "umich",
+        "goblue",
+        "ugli",
+        "baits"
     ]
-    static var wordPtr: Int = 0
+    var word: String {
+        var wordPointer = defaults.integer(forKey: "wordPointer")
+        if wordPointer >= words.count - 1 {
+            defaults.set(0, forKey: "wordPointer")
+            wordPointer = 0
+        }
+        return words[wordPointer]
+    }
+    
+    func incrementWordPointer() -> Void {
+        let wordPointer = defaults.integer(forKey: "wordPointer")
+        if wordPointer >= words.count - 1 {
+            defaults.set(0, forKey: "wordPointer")
+        } else {
+            defaults.set(wordPointer + 1, forKey: "wordPointer")
+        }
+    }
 }

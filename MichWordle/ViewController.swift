@@ -12,6 +12,9 @@ let cellBoarderColorUsed = UIColor.init(red: 0.40, green: 0.40, blue: 0.40, alph
 
 let blueColor = UIColor.init(red: 111/255.0, green: 178/255.0, blue: 210/255.0, alpha: 1).cgColor
 let yellowColor = UIColor.init(red: 215/255.0, green: 194/255.0, blue: 93/255.0, alpha: 1).cgColor
+let greyColor = UIColor(red: 0.50, green: 0.51, blue: 0.52, alpha: 1.00)
+
+let num_guesses = 6
 
 class ViewController: UIViewController {
 
@@ -19,8 +22,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var board: UIStackView!
     @IBOutlet weak var errorBar: UILabel!
     
-    let word_length = 7
-    let num_guesses = 6
+
     var boardLabels : [[UILabel]] = Array()
 
     var curr_row = 0
@@ -31,8 +33,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        boardLabels = Array(repeating: Array(repeating: UILabel(), count: word_length), count: num_guesses)
-        createBoard(rows: num_guesses, cols: word_length)
+        resetBoard()
+    }
+    
+    func resetBoard() -> Void {
+        for subview in board.subviews {
+            subview.removeFromSuperview()
+        }
+        boardLabels = Array(repeating: Array(repeating: UILabel(), count: manager.word_length), count: num_guesses)
+        createBoard(rows: num_guesses, cols: manager.word_length)
 
         // Do any additional setup after loading the view.
         for i in 0..<boardLabels.count {
@@ -46,13 +55,11 @@ class ViewController: UIViewController {
         errorBar.center.y = -100
         errorBar.layer.cornerRadius = 10.0
         errorBar.clipsToBounds = true
-        //TODO: When the view is rendered we dont want every label to just be "A".
-
     }
     
     //Fills the board stack_view with labels. Also populated the 2D array
     func createBoard(rows: Int, cols: Int) -> Void{
-        for row in 0..<rows {t
+        for row in 0..<rows {
             let currentHorizontalStackView = UIStackView()
             currentHorizontalStackView.axis = .horizontal
             currentHorizontalStackView.spacing = 3
@@ -119,7 +126,7 @@ class ViewController: UIViewController {
             self.boardLabels[row][i].layer.backgroundColor = color
             self.boardLabels[row][i].layer.borderColor = color
         } completion: { (finished1) in
-            if i == self.word_length - 1 {
+            if i == self.manager.word_length - 1 {
                 return;
             }
             self.flip_the_row(row: row, code: code, i: i+1)
@@ -130,13 +137,13 @@ class ViewController: UIViewController {
     @IBAction func keyboardButtonPress(_ sender: Any) {
         let button = sender as! UIButton
 
-        if (curr_col < word_length && curr_row < num_guesses){
+        if (curr_col < manager.word_length && curr_row < num_guesses){
             boardLabels[curr_row][curr_col].text = button.titleLabel!.text!
             boardLabels[curr_row][curr_col].layer.borderColor = cellBoarderColorUsed
         }
         
         
-        if (curr_col != word_length){
+        if (curr_col != manager.word_length){
             curr_col += 1
         }
         
@@ -150,9 +157,9 @@ class ViewController: UIViewController {
         let message = win ? "GO BLUE!" : "Maybe next time..."
         
         displayErrorMessage(withMessage: message)
-        delay(3.5) {
+        /*delay(3.5) {
             self.performSegue(withIdentifier: "statsSegue", sender: self)
-        }
+        }*/
     }
     
     func update_keyboard(keyboard_vals: [Int]){
@@ -175,6 +182,8 @@ class ViewController: UIViewController {
                         curr_button.backgroundColor = UIColor(cgColor: yellowColor)
                     }else if keyboard_vals[idx] == 1 {
                         curr_button.backgroundColor = UIColor(cgColor: cellBoarderColorVacant)
+                    } else {
+                        curr_button.backgroundColor = greyColor
                     }
                 }
             }
@@ -183,6 +192,14 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func newGamePressed(_ sender: Any) {
+        manager.newGame()
+        resetBoard()
+        curr_col = 0
+        curr_row = 0
+        
+        update_keyboard(keyboard_vals: manager.getKeyboardVals())
+    }
     //TODO: Make an IBAction that gets called when the "submit button is pressed"
     
     @IBAction func backspacePressed(_ sender: Any) {
@@ -198,12 +215,12 @@ class ViewController: UIViewController {
         var guess = ""
         
         //Only submit when it's a full guess
-        if (curr_col < word_length){
+        if (curr_col < manager.word_length){
             displayErrorMessage(withMessage: "Not enough letters")
             return
         }
         
-        for i in 0..<word_length{
+        for i in 0..<manager.word_length{
             let curr = boardLabels[curr_row][i].text!
             guess += curr
         }

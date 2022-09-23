@@ -8,10 +8,17 @@
 import Foundation
 
 class GameManager {
-    let word: String = "beyster";
-    
-    //0 is gray, 1 is guessed, 2 is yellow, 3 is blue
+    let wordDatabase = WordDatabase()
     var keyboardVals: [Int] = Array(repeating: 0, count: 26)
+    
+    var word_length: Int {
+        return wordDatabase.word.count
+    }
+    
+    func newGame() -> Void {
+        wordDatabase.incrementWordPointer()
+        keyboardVals = Array(repeating: 0, count: 26)
+    }
     
     func updateKeyboardVals(guess: String, code: String){
         //update all the blues
@@ -48,7 +55,8 @@ class GameManager {
     }
     
     func getCorrectCode(guess: String) -> String{
-        var l_guess = guess.lowercased()
+        let word = wordDatabase.word
+        let l_guess = guess.lowercased()
         var curr_word = word
         var code: String = String(repeating: "G", count: guess.count) // "GGGGGGGG"
         
